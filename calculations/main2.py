@@ -18,5 +18,5 @@ data_2021_clean = data_2021.drop(['Rank','Rank by Total', 'Total'], axis=1)
 print(data_2021_clean)
 
 #prints and creates bar graph for 2021 olympics
-piec2021 = px.bar(data_2021_clean, x='Team/NOC', y=['Gold', 'Silver', 'Bronze'])
+piec2021 = px.bar(data_2021_clean, x='Team/NOC', y=['Gold', 'Silver', 'Bronze'], title = '2021 Olympic Medals')
 piec2021.show()
